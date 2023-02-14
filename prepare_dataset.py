@@ -23,7 +23,7 @@ def preprocess_dataset(dataset_path, json_path, num_mfcc=13, n_fft=2048, hop_len
 
         label = dirpath.split("/")[-1]
         data["mapping"].append(label)
-        print("\nProcessing: '{}'".format(label))
+        # print("\nProcessing: '{}'".format(label))
 
         # process all audio files in sub-dir and store MFCCs
         for f in filenames:
@@ -46,7 +46,6 @@ def preprocess_dataset(dataset_path, json_path, num_mfcc=13, n_fft=2048, hop_len
                 data["MFCCs"].append(MFCCs.T.tolist())
                 data["labels"].append(i-1)
                 data["files"].append(file_path)
-                print("{}: {}".format(file_path, i-1))
     # save data in json file
     with open(json_path, "w") as fp:
         json.dump(data, fp, indent=4)
