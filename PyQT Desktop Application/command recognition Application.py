@@ -68,6 +68,8 @@ class App(QWidget):
 
 
         # create record and play buttons
+        self.setWindowTitle("Command Recognition Application")
+
         self.record_button = QPushButton("Record")
         self.predicted_button = QPushButton("Predict")
         self.play_button = QPushButton("Play")
