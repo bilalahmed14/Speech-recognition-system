@@ -86,5 +86,5 @@ if __name__=="__main__":
     assert kss is kss1
 
     # make a prediction
-    keyword = kss.predict("./test//happy.wav")
+    keyword = kss.predict("./recording.wav")
     print(keyword)

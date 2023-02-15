@@ -7,3 +7,12 @@ The dataset has 65,000 one-second long utterances of 30 short words (I used only
 These are the Loos and Acuraacy eveluation graphs
 
 ![alt text](fig1.JPG)
+
+
+So to Use the Desktop Application run the "PyQT Desktop Application\command recognition Application.py" 
+you will see window shown below
+![alt text](App.JPG)
+
+Press "Record" button and say a word shown in boxes (keep in mind recording will be of One second only)
+
+To check weather the model predict the recorded data well or not press "Predict" button and you can listen what you have recorded by using "play" button.
